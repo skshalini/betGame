@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <script src="https://kit.fontawesome.com/045a26da70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="bet.js"></script>
+    <title>Coin Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
+</head>
+<body>
+<!-- For header  -->
+    <div class="header">
+        <div class="icon-bar">  
+            <a href="#"><i class="fa fa-chevron-left" style="margin-left: -50px;"><h2 class="fa-bet"> Bet</h2></i></a>
+            <div class="topnav-right">   
+              <a href="#"><img src="./image/wallet.png" class="img-wallet" style="margin-right: 88px;width:25px;height:25px;" >
+                <h2 class="txt" >+</h2>
+              <h1 class="topup">TopUp</h1></a>          
+            <a href="#"><img src="./image/whatsapp-logo.png" style="margin-left: -200px; width:25px;height: 25px;">
+              <h1 class="ask">Ask</h1>
+              </a> 
+            <a href="#"><i class="fa fa-home" style="margin-left: -80px; font-size: 25px;" ></i>
+              <h1 class="home">Home</h1></a>
+         </div>
+        </div>
+      </div>
+      <!--  Body header  -->
+      <section class="first">
+        
+        <div class="aladdincoin">
+            <p>
+                Aladdin Coins
+            </p>
+            <div class="logo">
+                <img src="./image/crown.png" alt="Alladin Coins" class="number"style="width: 25px; height:25px;"> 
+                <h1>12345412334</h1>
+            </div>
+        </div>
+        <div class="totalbet">
+            <p>
+                Total Bet
+            </p>
+            <div class="logo">
+                <img src="./image/crown.png" alt="Alladin Coins" class="number" style="width: 25px; height:25px;">
+                       <h1>1234554</h1>
+            </div>
+        </div>
+        <div class="date">
+            <label for="date" style="color: #f9f9f9;font-size: 9px; font-weight: bold;">Select Date</label>
+           
+            <div class="date">
+                <input type="date" name="date" id="date">
+
+            </div>
+        </div>
+        <div class="aladdin">
+            <button class="btn">BET!</button>
+        </div>
+    </section>
+
+    <hr style="width: 90%; ">
+    <div class="text">
+        <p>Drag Chips to bet</p>
+    </div>
+    <section class="second">
+
+        <div class="live">
+            <div class="logo">
+                <img src="./image/live.png" alt="" style="width: 20px; height:20px;">
+                <p>Live</p>
+            </div>
+           
+        </div>
+
+<!-- Onlick dropdown menu list -->
+        <div class="dropdown">
+            <i class='fas fa-chevron-circle-down' style="font-size: 14px; color:#ffff; margin-left: 50px;margin-top: 11px;"></i>
+           <img src="./image/poker1.1.png"  onclick="myFunction()"  id="image" style="width:45px; height:45px; font-size:10px; margin-top:-45px; margin-left:5px;background: transparent;">
+
+              <div id="myDropdown" class="dropdown-content">
+              <a href="#"><img src="./image/poker2.1.png" onclick="show()" style="width:45px; height:45px;" ></a><hr style="width:60%;">
+              <a href="#"><img src="./image/poker3.1.png"  onclick="show1()" style="width:45px; height:45px;"></a><hr style="width:60%;">
+              <a href="#"><img src="./image/poker4.1.png"  onclick="show2()" style="width:45px; height:45px;"></a><hr style="width:60%;">
+              <a href="#"><img src="./image/poker1.1.png"  onclick="show3()" style="width:45px; height:45px;"></a>
+            </div>
+          
+            
+<div>
+  </div>
+
+  <script>
+    </script>
+<!-- Javascript funtion for dropdown menu list -->  
+          <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i=dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }      
+</script>
+
+        
+
+ 
+        </div>
+        <div class="back">
+            <div class="logo">
+                <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
+                <p>Back</p>
+            </div>
+            
+        </div>
+        <div class="undo">
+            <div class="logo">
+                <i class="fa-solid fa-reply"></i>
+                <p>Undo All</p>
+            </div>
+            
+        </div>
+        <div class="redo">
+            <div class="logo">
+                <i class="fa-solid fa-share"></i>
+                <p>Redo All</p>
+            </div>
+           
+        </div>
+    </section>
+</div>
+<!-- Body container for li buttons --> 
+    <div class="container">
+      
+        <ul id="keyboard">
+            <li class="number">0</li>
+            <li class="number">1</li>
+            <li class="number">2</li>
+            <li class="number">3</li>
+            <li class="number">4</li>
+            <li class="number">5</li>
+            <li class="number">6</li>
+            <li class="number">7</li>
+            <li class="number">8</li>
+            <li class="number">9</li>
+            <li sd="" class="clearl"></li>
+            <li sd="">0-9</li>
+            <li class="yellow" onclick="myFunction0()">0</li>
+            <li class="yellow" onclick="myFunction1()">1</li>
+            <li class="yellow" onclick="myFunction2()">2</li>
+            <li class="yellow" onclick="myFunction3()">3</li>
+            <li class="yellow" onclick="myFunction4()">4</li>
+            <li class="yellow" onclick="myFunction5()">5</li>
+            <li class="yellow" onclick="myFunction6()">6</li>
+            <li class="yellow" onclick="myFunction7()">7</li>
+            <li class="yellow" onclick="myFunction8()">8</li>
+            <li class="green" onclick="myFunction9()">9</li>
+            <li sd="" class="clearl">10-19</li>
+            <li class="red" onclick="myFunction10()">10</li>
+            <li class="red" onclick="myFunction11()">11</li>
+            <li class="yellow" onclick="myFunction12()">12</li>
+            <li class="yellow" onclick="myFunction13()">13</li>
+            <li class="yellow" onclick="myFunction14()">14</li>
+            <li class="yellow" onclick="myFunction15()">15</li>
+            <li class="yellow" onclick="myFunction16()">16</li>
+            <li class="green" onclick="myFunction17()">17</li>
+            <li class="green" onclick="myFunction18()">18</li>
+            <li class="green" onclick="myFunction19()">19</li>
+            <li sd="" class="clearl">20-29</li>
+            <li class="red" onclick="myFunction20()">20</li>
+            <li class="red" onclick="myFunction21()">21</li>
+            <li class="yellow" onclick="myFunction22()">22</li>
+            <li class="yellow" onclick="myFunction23()">23</li>
+            <li class="yellow" onclick="myFunction24()">24</li>
+            <li class="yellow" onclick="myFunction25()">25</li>
+            <li class="yellow" onclick="myFunction26()">26</li>
+            <li class="green" onclick="myFunction27()">27</li>
+            <li class="green" onclick="myFunction28()">28</li>
+            <li class="green" onclick="myFunction29()">29</li>
+            <li sd="" class="clearl">30-39</li>
+            <li class="red" onclick="myFunction30()">30</li>
+            <li class="red" onclick="myFunction31()">31</li>
+            <li class="red" onclick="myFunction32()">32</li>
+            <li class="yellow" onclick="myFunction33()">33</li>
+            <li class="yellow" onclick="myFunction34()">34</li>
+            <li class="yellow" onclick="myFunction35()">35</li>
+            <li class="green" onclick="myFunction36()">36</li>
+            <li class="green" onclick="myFunction37()">37</li>
+            <li class="green" onclick="myFunction38()">38</li>
+            <li class="green" onclick="myFunction39()">39</li>
+            <li sd="" class="clearl">40-49</li>
+            <li class="red" onclick="myFunction40()">40</li>
+            <li class="red" onclick="myFunction41()">41</li>
+            <li class="red" onclick="myFunction42()">42</li>
+            <li class="red" onclick="myFunction43()">43</li>
+            <li class="yellow" onclick="myFunction44()">44</li>
+            <li class="green" onclick="myFunction45()">45</li>
+            <li class="green" onclick="myFunction46()">46</li>
+            <li class="green" onclick="myFunction47()">47</li>
+            <li class="green" onclick="myFunction48()">48</li>
+            <li class="green" onclick="myFunction49()">49</li>
+            <li sd="" class="clearl">50-59</li>
+            <li class="red" onclick="myFunction50()">50</li>
+            <li class="red" onclick="myFunction51()">51</li>
+            <li class="red" onclick="myFunction52()">52</li>
+            <li class="red" onclick="myFunction53()">53</li>
+            <li class="red" onclick="myFunction54()">54</li>
+            <li class="blue" onclick="myFunction55()">55</li>
+            <li class="green" onclick="myFunction56()">56</li>
+            <li class="green" onclick="myFunction57()">57</li>
+            <li class="green" onclick="myFunction58()">58</li>
+            <li class="green" onclick="myFunction59()">59</li>
+            <li sd="" class="clearl">60-69</li>
+            <li class="red" onclick="myFunction60()">60</li>
+            <li class="red" onclick="myFunction61()">61</li>
+            <li class="red" onclick="myFunction62()">62</li>
+            <li class="red" onclick="myFunction63()">63</li>
+            <li class="blue" onclick="myFunction64()">64</li>
+            <li class="blue" onclick="myFunction65()">65</li>
+            <li class="green" onclick="myFunction66()">66</li>
+            <li class="green" onclick="myFunction67()">67</li>
+            <li class="green" onclick="myFunction68()">68</li>
+            <li class="green" onclick="myFunction69()">69</li>
+            <li sd="" class="clearl">70-79</li>
+            <li class="red" onclick="myFunction70()">70</li>
+            <li class="red" onclick="myFunction71()">71</li>
+            <li class="red" onclick="myFunction72()">72</li>
+            <li class="blue" onclick="myFunction73()">73</li>
+            <li class="blue" onclick="myFunction74()">74</li>
+            <li class="blue" onclick="myFunction75()">75</li>
+            <li class="blue" onclick="myFunction76()">76</li>
+            <li class="green" onclick="myFunction77()">77</li>
+            <li class="green" onclick="myFunction78()">78</li>
+            <li class="green" onclick="myFunction79()">79</li>
+            <li sd="" class="clearl">80-89</li>
+            <li class="red" onclick="myFunction80()">80</li>
+            <li class="red" onclick="myFunction81()">81</li>
+            <li class="blue" onclick="myFunction82()">82</li>
+            <li class="blue" onclick="myFunction83()">83</li>
+            <li class="blue" onclick="myFunction84()">84</li>
+            <li class="blue" onclick="myFunction85()">85</li>
+            <li class="blue" onclick="myFunction86()">86</li>
+            <li class="blue" onclick="myFunction87()">87</li>
+            <li class="green" onclick="myFunction88()">88</li>
+            <li class="green" onclick="myFunction89()">89</li>
+            <li sd="" class="clearl">90-99</li>
+            <li class="red" onclick="myFunction90()">90</li>
+            <li class="blue" onclick="myFunction91()">91</li>
+            <li class="blue" onclick="myFunction92()">92</li>
+            <li class="blue" onclick="myFunction93()">93</li>
+            <li class="blue" onclick="myFunction94()">94</li>
+            <li class="blue" onclick="myFunction95()">95</li>
+            <li class="blue" onclick="myFunction96()">96</li>
+            <li class="blue" onclick="myFunction97()">97</li>
+            <li class="blue" onclick="myFunction98()">98</li>
+            <li class="green" onclick="myFunction99()">99</li>
+        </ul>
+    </div>
+    <div class="block">
+        <li v2=""><h1>10 - 20</h1></li><br>
+        <li v2=""><h1>10 - 20</h1></li><br>
+        <li v2=""><h1>10 - 20</h1></li><br>
+        <li v2=""><h1>10 - 20</h1></li><br>
+        <li v2=""><h1>10 - 20</h1></li>
+    </div>
+    <div class="btn">
+        <button class="btn-red">Red</button>
+        <button class="blue">Blue</button>
+        <button class="green">Green</button>
+        <button class="yellow">Yellow</button>
+    </div>
+<!-- To show timer & li buttons-->
+    <hr style="width: 90%; margin-bottom: -80px"> 
+    <div class="timer">
+        <ul id="keyboard">
+            <li id="mydiv0" class="yellow">0</li>
+            <li id="mydiv1" class="yellow">1</li>
+            <li id="mydiv2" class="yellow">2</li>
+            <li id="mydiv3" class="yellow">3</li>
+            <li id="mydiv4" class="yellow">4</li>
+            <li id="mydiv5" class="yellow">5</li>
+            <li id="mydiv6" class="yellow">6</li>
+            <li id="mydiv7" class="yellow">7</li>
+            <li id="mydiv8" class="yellow">8</li>
+            <li id="mydiv9" class="green">9</li>
+            <li id="mydiv10" class="red">10</li>
+            <li id="mydiv11" class="red">11</li>
+            <li id="mydiv12" class="yellow">12</li>
+            <li id="mydiv13" class="yellow">13</li>
+            <li id="mydiv14" class="yellow">14</li>
+            <li id="mydiv15" class="yellow">15</li>
+            <li id="mydiv16" class="yellow">16</li>
+            <li id="mydiv17" class="green">17</li>
+            <li id="mydiv18" class="green">18</li>
+            <li id="mydiv19" class="green">19</li>
+            <li id="mydiv20" class="red">20</li>
+            <li id="mydiv21" class="red">21</li>
+            <li id="mydiv22" class="yellow">22</li>
+            <li id="mydiv23" class="yellow">23</li>
+            <li id="mydiv24" class="yellow">24</li>
+            <li id="mydiv25" class="yellow">25</li>
+            <li id="mydiv26" class="yellow">26</li>
+            <li class="green" id="mydiv27">27</li>
+            <li class="green" id="mydiv28">28</li>
+            <li class="green" id="mydiv29">29</li>
+            <li class="red" id="mydiv30">30</li>
+            <li class="red" id="mydiv31">31</li>
+            <li class="red" id="mydiv32">32</li>
+            <li class="yellow" id="mydiv33">33</li>
+            <li class="yellow" id="mydiv34">34</li>
+            <li class="yellow" id="mydiv35">35</li>
+            <li class="green" id="mydiv36">36</li>
+            <li class="green" id="mydiv37">37</li>
+            <li class="green" id="mydiv38">38</li>
+            <li class="green" id="mydiv39">39</li>
+            <li class="red" id="mydiv40">40</li>
+            <li class="red" id="mydiv41">41</li>
+            <li class="red" id="mydiv42">42</li>
+            <li class="red" id="mydiv43">43</li>
+            <li class="yellow" id="mydiv44">44</li>
+            <li class="green" id="mydiv45">45</li>
+            <li class="green" id="mydiv46">46</li>
+            <li class="green" id="mydiv47">47</li>
+            <li class="green" id="mydiv48">48</li>
+            <li class="green" id="mydiv49">49</li>
+            <li class="red" id="mydiv50">50</li>
+            <li class="red" id="mydiv51">51</li>
+            <li class="red" id="mydiv52">52</li>
+            <li class="red" id="mydiv53">53</li>
+            <li class="red" id="mydiv54">54</li>
+            <li class="blue" id="mydiv55">55</li>
+            <li class="green" id="mydiv56">56</li>
+            <li class="green" id="mydiv57">57</li>
+            <li class="green" id="mydiv58">58</li>
+            <li class="green" id="mydiv59">59</li>
+            <li class="red" id="mydiv60">60</li>
+            <li class="red" id="mydiv61">61</li>
+            <li class="red" id="mydiv62">62</li>
+            <li class="red" id="mydiv63">63</li>
+            <li class="blue" id="mydiv64">64</li>
+            <li class="blue" id="mydiv65">65</li>
+            <li class="green" id="mydiv66">66</li>
+            <li class="green" id="mydiv67">67</li>
+            <li class="green" id="mydiv68">68</li>
+            <li class="green" id="mydiv69">69</li>
+            <li class="red" id="mydiv70">70</li>
+            <li class="red" id="mydiv71">71</li>
+            <li class="red" id="mydiv72">72</li>
+            <li class="blue" id="mydiv73">73</li>
+            <li class="blue" id="mydiv74">74</li>
+            <li class="blue" id="mydiv75">75</li>
+            <li class="blue" id="mydiv76">76</li>
+            <li class="green" id="mydiv77">77</li>
+            <li class="green" id="mydiv78">78</li>
+            <li class="green" id="mydiv79">79</li>
+            <li class="red" id="mydiv80">80</li>
+            <li class="red" id="mydiv81">81</li>
+            <li class="blue" id="mydiv82">82</li>
+            <li class="blue" id="mydiv83">83</li>
+            <li class="blue" id="mydiv84">84</li>
+            <li class="blue" id="mydiv85">85</li>
+            <li class="blue" id="mydiv86">86</li>
+            <li class="blue" id="mydiv87">87</li>
+            <li class="green" id="mydiv88">88</li>
+            <li class="green" id="mydiv89">89</li>
+            <li class="red" id="mydiv90">90</li>
+            <li class="blue" id="mydiv91">91</li>
+            <li class="blue" id="mydiv92">92</li>
+            <li class="blue" id="mydiv93">93</li>
+            <li class="blue" id="mydiv94">94</li>
+            <li class="blue" id="mydiv95">95</li>
+            <li class="blue" id="mydiv96">96</li>
+            <li class="blue" id="mydiv97">97</li>
+            <li class="blue" id="mydiv98">98</li>
+            <li class="green" id="mydiv99">99</li>
+
+            
+        </ul>
+        <h3>Next draw</h3>
+    <p><span id="time" style="margin-left: 225px; font-size: 12px; display: block;"></span></p>
+    </div>
+
+<!--  For footer  -->
+    <div class="footer">
+        <div class="footer-icon-bar">    
+          <h2 class="txt-notify" >5</h2>
+            <a href="#"><img src="./image/notification (1).png" style="width: 20px; height: 20px;" >
+              <h3 class="notify">Notify</h3>
+            </a>          
+            <a href="#"><img src="./image/exchange.png" style="margin-top: -10px; width: 20px; height: 20px;">
+              <h3 class="transfer">Transfer</h3>
+            </i></a> 
+            <a href="#"><img src="./image/money (1).png"; style="width: 20px; height: 20px;">
+              <h3 class="bet">Bet</h3>
+            </i></a>
+            <a href="#"><img src="./image/invoice (1).png" style="margin-top: -10px;width: 20px; height: 20px;">
+              <h3 class="receipts">Receipts</h3></i></a> 
+              <a href="#"><img src="./image/award (1).png" style="width: 34px; height: 34px;margin-top: -4px;">
+                <h3 class="result">Result</h3></i></a> 
+              <a href="#"><img src="./image/settings-gears.png" style="width: 20px; height: 20px;">
+              <h3 class="more">More</h3>
+              </i></a>
+        </div>
+      </div> 
+</body>
+</html>
